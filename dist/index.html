@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cornell Extension</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+</head>
+
+<body>
+    <h1>Método Cornell</h1>
+    <form id="formCornell">
+        <label for="topic">Tema:</label>
+        <input type="text" id="topic" name="topic"><br><br>
+        <div class="container">
+            <div class="ideas">
+                <label for="idea">Ideas:</label>
+                <input type="text" id="txtIdea" placeholder="Ingresa una Idea">
+                <button id="btnIdea">Create</button>
+                <ul id="ListIdeas"></ul>
+            </div>
+            <div class="notes">
+                <label for="notes">Notes:</label>
+                <textarea id="notes" name="notes"></textarea><br><br>
+            </div>
+        </div>
+        <label for="summary">Resumes:</label>
+        <textarea id="summary" name="summary"></textarea><br><br>
+    </form>
+    <script src="bundle.js"></script>
+</body>
+
+</html>
