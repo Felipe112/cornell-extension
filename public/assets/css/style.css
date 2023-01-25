@@ -9,21 +9,107 @@ body {
 
 body {
     text-align: center !important;
-    background-color: #18202F;
+    background-color: #37435b;
 }
 
 h1 {
     font-weight: lighter;
 }
 
-input,
+input {
+    color: black;
+    border-radius: 5px;
+    width: 50%;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    color: black;
+    border-radius: 5px;
+}
+
+input[type="button"],
 button {
-    width: 35%;
+    width: 25%;
     padding: 10px;
     color: black;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
-    border-radius: 10px;
+    border-radius: 20px;
+}
+
+label {
+    font-size: 22px;
+    font-weight: bold;
+    color: #F5E5A5;
+    /* amarillo pastel */
+    text-shadow: 2px 2px #18202F;
+    /* sombra para el texto */
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-decoration-color: white;
+    /* color de fondo */
+    display: inline-block;
+    /* para que el label sea un bloque independiente */
+}
+
+ul {
+    text-align: left;
+}
+
+.custom-label {
+    font-size: 22px;
+    font-weight: bold;
+    color: #F5E5A5;
+    text-shadow: 2px 2px #18202F;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-decoration-color: white;
+    display: inline-block;
+    text-align: left;
+}
+
+.btn-create {
+    background-color: #1e853d;
+}
+
+.btn-delete {
+    display: inline-block;
+    position: relative;
+    width: 40px !important;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #902b2b;
+    color: #fff !important;
+    text-align: center;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.btn-delete::before,
+.btn-delete::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-delete::before {
+    width: 80%;
+    height: 2px;
+    background-color: #fff;
+}
+
+.btn-delete::after {
+    width: 2px;
+    height: 80%;
+    background-color: #fff;
 }
 
 button,
@@ -32,7 +118,7 @@ video {
 }
 
 img {
-    border-radius: 5px;
+    border-radius: 20px;
     width: 150px;
     height: 150px;
 }
@@ -41,60 +127,7 @@ ol {
     text-align: left;
 }
 
-.progress-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 5px;
-    width: 0%;
-    background-color: #9034AA;
-}
 
-
-.loading {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 999;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    color: white;
-    font-size: 2rem;
-
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-
-    animation-duration: 1s;
-    animation-name: fadeIn;
-}
-
-@-webkit-keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-}
 
 .container {
     display: grid;
@@ -112,10 +145,4 @@ ol {
 
 .notes {
     grid-column: 2 / 3;
-}
-
-textarea {
-    width: 100%;
-    height: 150px;
-    color: black;
 }
