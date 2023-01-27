@@ -34,6 +34,7 @@ textarea {
 }
 
 input[type="button"],
+input[type="submit"],
 button {
     width: 25%;
     padding: 10px;
