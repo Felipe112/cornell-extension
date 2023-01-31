@@ -8,28 +8,60 @@
     <title>Cornell Extension</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
 </head>
 
 <body>
-    <h1>Método Cornell</h1>
-    <form id="formCornell">
-        <label for="topic">Tema:</label>
-        <input type="text" id="topic" name="topic"><br><br>
-        <div class="container">
-            <div class="ideas">
-                <label for="idea">Ideas:</label>
-                <input type="text" id="txtIdea" placeholder="Ingresa una Idea">
-                <button id="btnIdea">Create</button>
-                <ul id="ListIdeas"></ul>
-            </div>
-            <div class="notes">
-                <label for="notes">Notes:</label>
-                <textarea id="notes" name="notes"></textarea><br><br>
-            </div>
-        </div>
-        <label for="summary">Resumes:</label>
-        <textarea id="summary" name="summary"></textarea><br><br>
-    </form>
+    <main class="wrapper">
+        <section class="container">
+            <h3>Cornell Method</h3>
+            <form id="formCornell">
+                <fieldset>
+                    <label for="topic">Title:</label>
+                    <input type="text" id="topic" placeholder="Give a title to your new notes"><br><br>
+                    <div class="container-1">
+                        <div class="row">
+                            <div class="column column-25">
+                                <label for="idea">Ideas:</label>
+                                <input type="text" id="txtIdea" placeholder="Enter an Idea">
+                                <input type="button" class="button button-small" id="btnIdea" value="Create" />
+                                <!-- <ol id="ListIdeas"> </ol> -->
+                                <table id="ListIdeas">
+                                    <thead>
+                                        <tr>
+                                            <th>Idea</th>
+                                            <th>Delete</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="column">
+                                <label for="notes">Notes:</label>
+                                <textarea class="label-inline textarea-1" id="notes" name="notes"
+                                    placeholder="Here are all your notes"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <label for="summary">Resumes:</label>
+                    <textarea id="summary" name="summary" class="label-inline textarea-2"
+                        placeholder="Once you have studied your abstract you can come here."></textarea><br><br>
+                    <input type="button" id="btnSave" class="button button-large " value="Save">
+                </fieldset>
+            </form>
+            <!-- <blockquote>
+                <p><em>IN:The information stored here will only be visible to the user, within your order, since the
+                        database used only works in the browser.</em></p>
+                <p><em>ES:La información aquí almacenada solo será visible por el usuario, al interior de su ordenar ya
+                        que
+                        la base de datos utilizada solo funciona en el browser.</em></p>
+            </blockquote> -->
+        </section>
+
+    </main>
     <script src="bundle.js"></script>
 </body>
 

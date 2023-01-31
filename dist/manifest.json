@@ -5,6 +5,7 @@
     "version": "1.0",
     "manifest_version": 3,
     "action": {
+        "default_title": "Press Shift+C",
         "default_popup": "index.html"
     },
     "icons": {
@@ -18,6 +19,7 @@
     },
     "permissions": [
         "activeTab",
-        "scripting"
+        "scripting",
+        "storage"
     ]
 }

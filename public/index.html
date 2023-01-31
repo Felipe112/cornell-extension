@@ -15,7 +15,7 @@
 
 <body>
     <main class="wrapper">
-        <section class="container">
+        <section id="sect-form" class="container">
             <h3>Cornell Method</h3>
             <form id="formCornell">
                 <fieldset>
@@ -23,7 +23,7 @@
                     <input type="text" id="topic" placeholder="Give a title to your new notes"><br><br>
                     <div class="container-1">
                         <div class="row">
-                            <div class="column">
+                            <div class="column column-25">
                                 <label for="idea">Ideas:</label>
                                 <input type="text" id="txtIdea" placeholder="Enter an Idea">
                                 <input type="button" class="button button-small" id="btnIdea" value="Create" />
@@ -59,6 +59,23 @@
                         que
                         la base de datos utilizada solo funciona en el browser.</em></p>
             </blockquote>
+        </section>
+        <section id="sect-list" class="container">
+            <div class="container-1">
+                <input type="button" id="btnNew" class="button button-large " value="New Note">
+                <table id="ListNotes">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Ideas</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+
         </section>
 
     </main>

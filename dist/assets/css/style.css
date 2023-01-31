@@ -1,121 +1,33 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap');
-
-*,
-html,
-body {
-    font-family: 'Roboto', sans-serif;
-    color: white;
+/* Custom size */
+.button-small {
+    font-size: .8rem !important;
+    height: 2.8rem !important;
+    line-height: 2.8rem !important;
+    padding: 0 1.5rem !important;
 }
 
-body {
-    text-align: center !important;
-    background-color: #18202F;
+.button-large {
+    font-size: 1.4rem !important;
+    height: 4.5rem !important;
+    line-height: 4.5rem !important;
+    padding: 0 2rem !important;
 }
 
-h1 {
-    font-weight: lighter;
+.textarea-1 {
+    width: 534px;
+    height: 460px;
 }
 
-input,
-button {
-    width: 35%;
-    padding: 10px;
-    color: black;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-    border-radius: 10px;
-}
-
-button,
-video {
-    margin-right: 10px;
-}
-
-img {
-    border-radius: 5px;
-    width: 150px;
+.textarea-2 {
     height: 150px;
+    width: 760px;
 }
 
-ol {
-    text-align: left;
-}
-
-.progress-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 5px;
-    width: 0%;
-    background-color: #9034AA;
-}
-
-
-.loading {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 999;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    color: white;
-    font-size: 2rem;
-
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-
-    animation-duration: 1s;
-    animation-name: fadeIn;
-}
-
-@-webkit-keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
+.container-1 {
+    border-left: 0.3rem solid #9b4dca;
+    padding-left: 2rem;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.cue,
-.notes {
-    padding: 10px;
-}
-
-.cue {
-    grid-column: 1 / 2;
-}
-
-.notes {
-    grid-column: 2 / 3;
-}
-
-textarea {
-    width: 100%;
-    height: 150px;
-    color: black;
+    max-width: 70rem !important;
 }
