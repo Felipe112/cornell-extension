@@ -31,6 +31,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "milligram": "^1.4.1",
     "uuid": "^9.0.0"
   }
 }

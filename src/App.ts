@@ -4,7 +4,7 @@ import { v4 as uuid4 } from 'uuid';
 
 let txtIdea: HTMLInputElement = document.getElementById('txtIdea') as HTMLInputElement;
 let btnIdea: HTMLButtonElement = document.getElementById('btnIdea') as HTMLButtonElement;
-let lsIdea: HTMLUListElement = document.getElementById('ListIdeas') as HTMLUListElement;
+let lsIdea: HTMLTableElement = document.getElementById('ListIdeas') as HTMLTableElement;
 let deleteBans = document.getElementsByClassName("btn-delete");
 let txtTopic: HTMLInputElement = document.getElementById('topic') as HTMLInputElement;
 let txtNote: HTMLTextAreaElement = document.getElementById('notes') as HTMLTextAreaElement;
@@ -28,25 +28,25 @@ const maxId = (): number => {
     return ideas.length <= 0 ? 0 : Math.max(...ideas.map(idea => idea.id));
 };
 
-const refreshList = (list: HTMLUListElement | null) => {
+const refreshList = (list: HTMLTableElement | null) => {
     if (list) {
-        list.innerHTML = "";
+        for (let i = list.rows.length - 1; i > 0; i--) {
+            list.deleteRow(i);
+        }
         ideas.forEach((idea): void => {
-            let newItem = document.createElement("li") as HTMLLIElement;
+            let newItem = document.createElement("tr") as HTMLTableRowElement;
             newItem.id = idea.id.toString();
-            newItem.value = idea.id;
-            newItem.innerHTML = `<div class="input-container">
-        <label id="idea${idea.id}" class="custom-label" for="idea" >${idea.description} </label>
-        <input type="button" class="btn-delete" data-id="${idea.id}" class="delete-button" value="X"/>
-      </div>`;
+            newItem.innerHTML = `
+            <td id="idea${idea.id}" >${idea.description} </td>
+            <td><input type="button" class="button button-small" data-id="${idea.id}" class="delete-button" value="X"/></td> `;
             list.appendChild(newItem);
             ideaDelete(list);
         });
     }
 };
 
-const ideaDelete = (list: HTMLUListElement | null) => {
-    const removeIdeas = document.querySelectorAll<HTMLInputElement>(".btn-delete");
+const ideaDelete = (list: HTMLTableElement | null) => {
+    const removeIdeas = document.querySelectorAll<HTMLInputElement>(".button-small");
     removeIdeas.forEach(ideaDelete => ideaDelete.addEventListener("click", (e) => {
         remove((Number(ideaDelete.getAttribute("data-id"))));
         refreshList(list);
@@ -67,7 +67,6 @@ const allNotes = (): Note[] => {
     }
     return notes;
 }
-
 
 
 
