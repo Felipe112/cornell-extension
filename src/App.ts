@@ -134,6 +134,7 @@ const updateNote = (id: string | null) => {
             ideas = getNote.ideas;
             txtNote.value = getNote.note;
             txtSummary.value = getNote.summary;
+            refreshList(lsIdea);
             visible(setForm);
             invisible(setList);
         }
@@ -167,7 +168,6 @@ const init = () => {
             invisible(setForm);
             visible(setList);
             refreshListNote();
-            console.log(allNotes());
         }
     }
     if (btnNew) {

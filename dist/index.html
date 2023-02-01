@@ -15,8 +15,13 @@
 
 <body>
     <main class="wrapper">
-        <section class="container">
+        <section id="sect-form" class="container">
             <h3>Cornell Method</h3>
+            <div class="row">
+                <div class="column column-10 column-offset-90">
+                    <input type="button" class="button btn-list button-small" id="btnList" value="List" />
+                </div>
+            </div>
             <form id="formCornell">
                 <fieldset>
                     <label for="topic">Title:</label>
@@ -52,13 +57,30 @@
                     <input type="button" id="btnSave" class="button button-large " value="Save">
                 </fieldset>
             </form>
-            <!-- <blockquote>
+            <blockquote>
                 <p><em>IN:The information stored here will only be visible to the user, within your order, since the
                         database used only works in the browser.</em></p>
                 <p><em>ES:La información aquí almacenada solo será visible por el usuario, al interior de su ordenar ya
                         que
                         la base de datos utilizada solo funciona en el browser.</em></p>
-            </blockquote> -->
+            </blockquote>
+        </section>
+        <section id="sect-list" class="container">
+            <div class="container-1">
+                <input type="button" id="btnNew" class="button button-large " value="New Note">
+                <table id="ListNotes">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Ideas</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+
         </section>
 
     </main>

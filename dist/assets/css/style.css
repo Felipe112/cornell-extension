@@ -31,3 +31,13 @@
 .container {
     max-width: 70rem !important;
 }
+
+.btn-delete {
+    background-color: #cd4b8d !important;
+    border: #cd4b8d !important;
+}
+
+.btn-list {
+    background-color: #58bbc4 !important;
+    border: #58bbc4 !important;
+}
