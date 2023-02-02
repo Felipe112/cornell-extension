@@ -99,7 +99,7 @@ export default class App {
                 this.noteEdit();
             });
         }
-    };
+    }
 
     noteDelete() {
         const removeIdeas = document.querySelectorAll<HTMLInputElement>(".btn-delete-note");
@@ -108,6 +108,7 @@ export default class App {
             this.refreshListNote();
         }));
     }
+
     removeNote(id: string | null) {
         if (id) {
             let index = this.allNotes().findIndex(i => i.id === id);
@@ -117,7 +118,7 @@ export default class App {
                 this.saveNote(notesAll);
             }
         }
-    };
+    }
 
     noteEdit() {
         const editIdeas = document.querySelectorAll<HTMLInputElement>(".btn-edit");
@@ -140,7 +141,7 @@ export default class App {
                 this.invisible(setList);
             }
         }
-    };
+    }
 }
 
 
