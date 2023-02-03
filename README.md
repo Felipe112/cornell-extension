@@ -7,9 +7,9 @@ Extensión de chrome creada en typescript con el fin de poder tomar apuntes medi
 Primera versión en la cual se logra establecer un CRUD para crear y almacenar los registros en el navegador.
 
 ### Características de la aplicación y demostración
-* [Muestra 1](https://github.com/Felipe112/cornell-extension/blob/master/public/assets/plugin1.png)
+* [Muestra 1](https://github.com/Felipe112/cornell-extension/blob/master/public/assets/img/plugin1.png)
 
-* [Muestra 2](https://github.com/Felipe112/cornell-extension/blob/master/public/assets/plugin2.png)
+* [Muestra 2](https://github.com/Felipe112/cornell-extension/blob/master/public/assets/img/plugin2.png)
 
 ### Pre-requisitos 📋
 
