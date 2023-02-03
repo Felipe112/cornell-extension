@@ -1,0 +1,43 @@
+/* Custom size */
+.button-small {
+    font-size: .8rem !important;
+    height: 2.8rem !important;
+    line-height: 2.8rem !important;
+    padding: 0 1.5rem !important;
+}
+
+.button-large {
+    font-size: 1.4rem !important;
+    height: 4.5rem !important;
+    line-height: 4.5rem !important;
+    padding: 0 2rem !important;
+}
+
+.textarea-1 {
+    width: 534px;
+    height: 460px;
+}
+
+.textarea-2 {
+    height: 150px;
+    width: 760px;
+}
+
+.container-1 {
+    border-left: 0.3rem solid #9b4dca;
+    padding-left: 2rem;
+}
+
+.container {
+    max-width: 70rem !important;
+}
+
+.btn-delete {
+    background-color: #cd4b8d !important;
+    border: #cd4b8d !important;
+}
+
+.btn-list {
+    background-color: #58bbc4 !important;
+    border: #58bbc4 !important;
+}
